@@ -1,0 +1,44 @@
+<header class="header">
+    <nav class="header-container">
+
+        <a class="logo" href="#">
+            <div class="marker-container">
+                <i class="fa-solid fa-graduation-cap" style="color:white; font-size: small;"></i>
+            </div>
+            <span>StudentGator</span>
+        </a>
+
+        <button class="menu-toggle" (click)="toggleMenu()">
+            <i class="fa-solid fa-bars" style="color: rgb(177, 151, 252);"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#">Schools</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="search-toggle">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a class="btn-login" href="#">Login</a>
+            <a class="btn-signup" href="#">Sign up</a>
+        </div>
+
+        <aside class="nav-menu-burger" [class.open]="isMenuOpen()">
+            <ul class="nav-links-burger">
+                <li><a href="#">Schools</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+            <div class="nav-actions-burger">
+                <button class="search-toggle">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <a class="btn-login" href="#">Login</a>
+                <a class="btn-signup" href="#">Sign up</a>
+            </div>
+        </aside>
+    </nav>
+</header>
