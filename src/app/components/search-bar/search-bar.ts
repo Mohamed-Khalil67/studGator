@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 
 @Component({
   selector: 'app-search-bar',
@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   templateUrl: './search-bar.html',
   styleUrl: './search-bar.scss',
 })
-export class SearchBar {}
+export class SearchBar {
+  searchChange = output<string>();
+
+  onInput(value: string) {
+    this.searchChange.emit(value);
+  }
+}

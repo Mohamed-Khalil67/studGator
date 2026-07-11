@@ -36,9 +36,7 @@
     }
 
     .badge-school {
-      display: flex;
-      align-items: center;
-      justify-content: start;
+      display: inline-block;
       gap: 6px;
       align-self: flex-start;
       background: #fff;

@@ -1,7 +1,18 @@
 <div class="list-wrapper">
+    <app-search-bar (searchChange)="onSearch($event)"></app-search-bar>
+
+    @if (filteredPrograms$ | async; as programs) {
+    <span class="count-pill">{{ programs.length }} results</span>
+    }
+
+    @if (filteredPrograms$ | async; as programs) {
     <div class="list">
         @for (program of programs; track program.id) {
         <app-program-card [program]="program" />
         }
+        @if (programs.length === 0) {
+        <p class="no-results">No programs match your search.</p>
+        }
     </div>
+    }
 </div>

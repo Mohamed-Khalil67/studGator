@@ -16,3 +16,16 @@
   flex-direction: column;
   gap: 16px;
 }
+
+.count-pill {
+  display: inline-block;
+  align-self: flex-end;
+  font-family: vars.$font-poppins;
+  font-size: 14px;
+  font-weight: 600;
+  color: vars.$color-primary;
+  background: white;
+  border-radius: 30px;
+  padding: 6px 16px;
+  margin-bottom: 16px;
+}
