@@ -162,5 +162,85 @@ export const MOCK_PROGRAMS: Program[] = [
         tuition: 3600,
         tuitionPeriod: '1stYear',
         category: 'Engineering & Technology'
-    }
+    },
+    {
+        id: 17,
+        programName: 'Bachelor of Science in Computer Science',
+        schoolName: 'Technical University of Munich',
+        logoUrl: 'https://ui-avatars.com/api/?name=TUM&background=0065BD&color=fff&bold=true',
+        country: 'Germany',
+        tuition: 1500,
+        tuitionPeriod: '1stYear',
+        category: 'Engineering & Technology'
+    },
+    {
+        id: 18,
+        programName: 'MSc Management',
+        schoolName: 'WHU Otto Beisheim School of Management',
+        logoUrl: 'https://ui-avatars.com/api/?name=WHU&background=003B6F&color=fff&bold=true',
+        country: 'Germany',
+        tuition: 28000,
+        tuitionPeriod: '1stYear',
+        category: 'Business & Management & Finance'
+    },
+    {
+        id: 19,
+        programName: 'Bachelor of Arts in Philosophy',
+        schoolName: 'Heidelberg University',
+        logoUrl: 'https://ui-avatars.com/api/?name=HU&background=C1272D&color=fff&bold=true',
+        country: 'Germany',
+        tuition: 1600,
+        tuitionPeriod: '1stYear',
+        category: 'Politics & Social Sciences'
+    },
+    {
+        id: 20,
+        programName: 'MSc Data Science',
+        schoolName: 'Ludwig Maximilian University of Munich',
+        logoUrl: 'https://ui-avatars.com/api/?name=LMU&background=007A53&color=fff&bold=true',
+        country: 'Germany',
+        tuition: 1800,
+        tuitionPeriod: '1stYear',
+        category: 'Engineering & Technology'
+    },
+    {
+        id: 21,
+        programName: 'MBA',
+        schoolName: 'Frankfurt School of Finance & Management',
+        logoUrl: 'https://ui-avatars.com/api/?name=FS&background=E2001A&color=fff&bold=true',
+        country: 'Germany',
+        tuition: 46500,
+        tuitionPeriod: '1stYear',
+        category: 'Business & Management & Finance'
+    },
+    {
+        id: 22,
+        programName: 'Bachelor in Architecture',
+        schoolName: 'RWTH Aachen University',
+        logoUrl: 'https://ui-avatars.com/api/?name=RWTH&background=006AB3&color=fff&bold=true',
+        country: 'Germany',
+        tuition: 1700,
+        tuitionPeriod: '1stYear',
+        category: 'Arts & Design'
+    },
+    {
+        id: 23,
+        programName: 'Bachelor of Medicine',
+        schoolName: 'Charité Universitätsmedizin Berlin',
+        logoUrl: 'https://ui-avatars.com/api/?name=CU&background=3C3C3C&color=fff&bold=true',
+        country: 'Germany',
+        tuition: 1500,
+        tuitionPeriod: '1stYear',
+        category: 'Science & Health'
+    },
+    {
+        id: 24,
+        programName: 'MSc International Business',
+        schoolName: 'Mannheim Business School',
+        logoUrl: 'https://ui-avatars.com/api/?name=MBS&background=004E9A&color=fff&bold=true',
+        country: 'Germany',
+        tuition: 24500,
+        tuitionPeriod: '1stYear',
+        category: 'Business & Management & Finance'
+    },
 ];

@@ -1,1 +1,33 @@
-<p>program-card works!</p>
+<section class="card">
+    <img class="logo" [src]="program().logoUrl" [alt]="program().schoolName" />
+
+    <div class="info">
+        <h2 class="title">{{ program().programName }}</h2>
+        <div class="badge-school">
+            <p>{{ program().schoolName }}</p>
+        </div>
+        <div class="badges">
+            <span class="badge invert-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                {{ program().country }}
+            </span>
+            <span class="badge invert-icon">
+                <i class="fa-solid fa-coins"></i>
+                {{ program().tuition }}€/{{ program().tuitionPeriod }}
+            </span>
+            <span class="badge badge-category">
+                <span class="icon-circle">
+                    <i class="fa-solid fa-graduation-cap" style="color: blue;"></i>
+                </span>
+                {{ program().category }}
+            </span>
+        </div>
+
+        <div class="actions">
+            <button class="btn-view">View Program</button>
+            <button class="btn-fav">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+        </div>
+    </div>
+</section>

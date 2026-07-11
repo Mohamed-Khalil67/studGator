@@ -1,1 +1,7 @@
-<p>program-list works!</p>
+<div class="list-wrapper">
+    <div class="list">
+        @for (program of programs; track program.id) {
+        <app-program-card [program]="program" />
+        }
+    </div>
+</div>

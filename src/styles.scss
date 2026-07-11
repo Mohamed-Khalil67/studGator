@@ -1,7 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
 @use 'app/styles/variables' as vars;
 
-// Reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -37,8 +43,7 @@ button {
   padding: 0;
 }
 
-// Base
 body {
-  background-color: vars.$color-body-bg;
+  background-color: #f7f4fb;
   font-family: vars.$font-poppins;
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Program } from '../../models/program.model';
 
 @Component({
   selector: 'app-program-card',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './program-card.html',
   styleUrl: './program-card.scss',
 })
-export class ProgramCard {}
+export class ProgramCard {
+  program = input.required<Program>()
+}
