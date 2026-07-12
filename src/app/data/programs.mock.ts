@@ -6,36 +6,36 @@ export const MOCK_PROGRAMS: Program[] = [
         id: 1, programName: 'MSc Entrepreneurship & Innovation', schoolName: 'SKEMA Business School',
         logoUrl: 'https://ui-avatars.com/api/?name=SKEMA&background=D6293E&color=fff&bold=true',
         country: 'France', city: 'Lille', tuition: 19000, tuitionPeriod: '1stYear',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'September',
-        durationYears: 2, language: 'English', type: 'Program', rating: 4.6,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'Fall',
+        duration: '2 years', language: 'English', type: 'Program', rating: 4.6
     },
     {
         id: 2, programName: 'Bachelor of Arts in International Relations', schoolName: 'Sorbonne University',
         logoUrl: 'https://ui-avatars.com/api/?name=SU&background=1F3A93&color=fff&bold=true',
         country: 'France', city: 'Paris', tuition: 3770, tuitionPeriod: '1stYear',
-        category: 'Politics & Social Sciences', currentLevel: 'Bac+3', intake: 'September',
-        durationYears: 3, language: 'French', type: 'Program', rating: 4.3,
+        category: 'Politics & Social Sciences', currentLevel: 'Bac+3', intake: 'Fall',
+        duration: '3 years', language: 'French', type: 'Program', rating: 4.3
     },
     {
         id: 3, programName: 'Master in Management', schoolName: 'ESSEC Business School',
         logoUrl: 'https://ui-avatars.com/api/?name=ESSEC&background=5B2A86&color=fff&bold=true',
         country: 'France', city: 'Cergy', tuition: 21000, tuitionPeriod: '1stYear',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'September',
-        durationYears: 2, language: 'English', type: 'Program', rating: 4.8,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'Spring',
+        duration: '2 years', language: 'English', type: 'Program', rating: 4.8
     },
     {
         id: 4, programName: 'MSc Data Science & Artificial Intelligence', schoolName: 'CentraleSupélec',
         logoUrl: 'https://ui-avatars.com/api/?name=CS&background=1B1F3B&color=fff&bold=true',
         country: 'France', city: 'Paris', tuition: 16500, tuitionPeriod: '1stYear',
-        category: 'Engineering & Technology', currentLevel: 'Bac+5', intake: 'October',
-        durationYears: 2, language: 'English', type: 'Program', rating: 4.7,
+        category: 'Engineering & Technology', currentLevel: 'Bac+5', intake: 'Fall',
+        duration: '2 years', language: 'English', type: 'Program', rating: 4.7
     },
     {
         id: 5, programName: 'Bachelor of Science in Biology', schoolName: 'University of Lyon',
         logoUrl: 'https://ui-avatars.com/api/?name=UL&background=0E8F6E&color=fff&bold=true',
         country: 'France', city: 'Lyon', tuition: 3300, tuitionPeriod: '1stYear',
-        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 3, language: 'French', type: 'Program', rating: 4.0,
+        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'Fall',
+        duration: '3 years', language: 'French', type: 'Program', rating: 4.0
     },
 
     // ---------- Spain · Programs ----------
@@ -43,36 +43,36 @@ export const MOCK_PROGRAMS: Program[] = [
         id: 6, programName: 'Master in Business Analytics', schoolName: 'IE University',
         logoUrl: 'https://ui-avatars.com/api/?name=IE&background=002F6C&color=fff&bold=true',
         country: 'Spain', city: 'Madrid', tuition: 28500, tuitionPeriod: '1stYear',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'September',
-        durationYears: 1, language: 'English', type: 'Program', rating: 4.5,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'Fall',
+        duration: '1 year', language: 'English', type: 'Program', rating: 4.5
     },
     {
         id: 7, programName: 'Bachelor of Computer Science', schoolName: 'Universidad Complutense de Madrid',
         logoUrl: 'https://ui-avatars.com/api/?name=UCM&background=B22222&color=fff&bold=true',
         country: 'Spain', city: 'Madrid', tuition: 2100, tuitionPeriod: '1stYear',
-        category: 'Engineering & Technology', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 4, language: 'Spanish', type: 'Program', rating: 4.1,
+        category: 'Engineering & Technology', currentLevel: 'Bac+1', intake: 'Fall',
+        duration: '4 years', language: 'Spanish', type: 'Program', rating: 4.1
     },
     {
         id: 8, programName: 'MBA', schoolName: 'IESE Business School',
         logoUrl: 'https://ui-avatars.com/api/?name=IESE&background=7A1F2B&color=fff&bold=true',
         country: 'Spain', city: 'Barcelona', tuition: 99500, tuitionPeriod: '1stYear',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'September',
-        durationYears: 2, language: 'English', type: 'Program', rating: 4.9,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'Winter',
+        duration: '2 years', language: 'English', type: 'Program', rating: 4.9
     },
     {
         id: 9, programName: 'Bachelor in Medicine', schoolName: 'University of Navarra',
         logoUrl: 'https://ui-avatars.com/api/?name=UNAV&background=1A4314&color=fff&bold=true',
         country: 'Spain', city: 'Pamplona', tuition: 24000, tuitionPeriod: '1stYear',
-        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 5, language: 'Spanish', type: 'Program', rating: 4.4,
+        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'Fall',
+        duration: '5 years', language: 'Spanish', type: 'Program', rating: 4.4
     },
     {
         id: 10, programName: 'Bachelor in Graphic Design', schoolName: 'ELISAVA Barcelona School of Design',
         logoUrl: 'https://ui-avatars.com/api/?name=ELISAVA&background=D6006C&color=fff&bold=true',
         country: 'Spain', city: 'Barcelona', tuition: 11200, tuitionPeriod: '1stYear',
-        category: 'Arts & Design', currentLevel: 'Bac+2', intake: 'October',
-        durationYears: 4, language: 'English', type: 'Program', rating: 4.2,
+        category: 'Arts & Design', currentLevel: 'Bac+2', intake: 'Spring',
+        duration: '4 years', language: 'English', type: 'Program', rating: 4.2
     },
 
     // ---------- Germany · Programs ----------
@@ -80,29 +80,29 @@ export const MOCK_PROGRAMS: Program[] = [
         id: 11, programName: 'Bachelor of Science in Computer Science', schoolName: 'Technical University of Munich',
         logoUrl: 'https://ui-avatars.com/api/?name=TUM&background=0065BD&color=fff&bold=true',
         country: 'Germany', city: 'Munich', tuition: 1500, tuitionPeriod: '1stYear',
-        category: 'Engineering & Technology', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 3, language: 'German', type: 'Program', rating: 4.8,
+        category: 'Engineering & Technology', currentLevel: 'Bac+1', intake: 'Fall',
+        duration: '3 years', language: 'German', type: 'Program', rating: 4.8
     },
     {
         id: 12, programName: 'MSc Management', schoolName: 'WHU Otto Beisheim School of Management',
         logoUrl: 'https://ui-avatars.com/api/?name=WHU&background=003B6F&color=fff&bold=true',
         country: 'Germany', city: 'Vallendar', tuition: 28000, tuitionPeriod: '1stYear',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'January',
-        durationYears: 2, language: 'English', type: 'Program', rating: 4.6,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'Winter',
+        duration: '2 years', language: 'English', type: 'Program', rating: 4.6
     },
     {
         id: 13, programName: 'MBA', schoolName: 'Frankfurt School of Finance & Management',
         logoUrl: 'https://ui-avatars.com/api/?name=FS&background=E2001A&color=fff&bold=true',
         country: 'Germany', city: 'Frankfurt', tuition: 46500, tuitionPeriod: '1stYear',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'September',
-        durationYears: 1, language: 'English', type: 'Program', rating: 4.5,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'Summer',
+        duration: '1 year', language: 'English', type: 'Program', rating: 4.5
     },
     {
         id: 14, programName: 'Bachelor of Medicine', schoolName: 'Charité Universitätsmedizin Berlin',
         logoUrl: 'https://ui-avatars.com/api/?name=CU&background=3C3C3C&color=fff&bold=true',
         country: 'Germany', city: 'Berlin', tuition: 1500, tuitionPeriod: '1stYear',
-        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'October',
-        durationYears: 5, language: 'German', type: 'Program', rating: 4.7,
+        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'Fall',
+        duration: '5 years', language: 'German', type: 'Program', rating: 4.7
     },
 
     // ---------- Schools ----------
@@ -110,198 +110,198 @@ export const MOCK_PROGRAMS: Program[] = [
         id: 15, programName: 'SKEMA Business School', schoolName: 'Grande École · Multi-campus',
         logoUrl: 'https://ui-avatars.com/api/?name=SKEMA&background=D6293E&color=fff&bold=true',
         country: 'France', city: 'Lille', tuition: 18500, tuitionPeriod: 'avg/year',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+3', intake: 'September',
-        durationYears: 3, language: 'English', type: 'School', rating: 4.5,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+3', intake: 'Fall',
+        duration: '3 years', language: 'English', type: 'School', rating: 4.5
     },
     {
         id: 16, programName: 'Sorbonne University', schoolName: 'Public Research University',
         logoUrl: 'https://ui-avatars.com/api/?name=SU&background=1F3A93&color=fff&bold=true',
         country: 'France', city: 'Paris', tuition: 3500, tuitionPeriod: 'avg/year',
-        category: 'Politics & Social Sciences', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 3, language: 'French', type: 'School', rating: 4.7,
+        category: 'Politics & Social Sciences', currentLevel: 'Bac+1', intake: 'Fall',
+        duration: '3 years', language: 'French', type: 'School', rating: 4.7
     },
     {
         id: 17, programName: 'CentraleSupélec', schoolName: 'Engineering Grande École',
         logoUrl: 'https://ui-avatars.com/api/?name=CS&background=1B1F3B&color=fff&bold=true',
         country: 'France', city: 'Paris', tuition: 12000, tuitionPeriod: 'avg/year',
-        category: 'Engineering & Technology', currentLevel: 'Bac+2', intake: 'September',
-        durationYears: 3, language: 'French', type: 'School', rating: 4.6,
+        category: 'Engineering & Technology', currentLevel: 'Bac+2', intake: 'Fall',
+        duration: '3 years', language: 'French', type: 'School', rating: 4.6
     },
     {
         id: 18, programName: 'IE University', schoolName: 'Private University',
         logoUrl: 'https://ui-avatars.com/api/?name=IE&background=002F6C&color=fff&bold=true',
         country: 'Spain', city: 'Madrid', tuition: 21000, tuitionPeriod: 'avg/year',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+1', intake: 'October',
-        durationYears: 4, language: 'English', type: 'School', rating: 4.8,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+1', intake: 'Spring',
+        duration: '4 years', language: 'English', type: 'School', rating: 4.8
     },
     {
         id: 19, programName: 'University of Barcelona', schoolName: 'Public University',
         logoUrl: 'https://ui-avatars.com/api/?name=UB&background=A6192E&color=fff&bold=true',
         country: 'Spain', city: 'Barcelona', tuition: 2500, tuitionPeriod: 'avg/year',
-        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 4, language: 'Spanish', type: 'School', rating: 4.4,
+        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'Fall',
+        duration: '4 years', language: 'Spanish', type: 'School', rating: 4.4
     },
     {
         id: 20, programName: 'IESE Business School', schoolName: 'Graduate Business School',
         logoUrl: 'https://ui-avatars.com/api/?name=IESE&background=7A1F2B&color=fff&bold=true',
         country: 'Spain', city: 'Barcelona', tuition: 35000, tuitionPeriod: 'avg/year',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'September',
-        durationYears: 2, language: 'English', type: 'School', rating: 4.9,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'Fall',
+        duration: '2 years', language: 'English', type: 'School', rating: 4.9
     },
     {
         id: 21, programName: 'Technical University of Munich', schoolName: 'Public Research University',
         logoUrl: 'https://ui-avatars.com/api/?name=TUM&background=0065BD&color=fff&bold=true',
         country: 'Germany', city: 'Munich', tuition: 1500, tuitionPeriod: 'avg/year',
-        category: 'Engineering & Technology', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 3, language: 'German', type: 'School', rating: 4.9,
+        category: 'Engineering & Technology', currentLevel: 'Bac+1', intake: 'Fall',
+        duration: '3 years', language: 'German', type: 'School', rating: 4.9
     },
     {
         id: 22, programName: 'Heidelberg University', schoolName: 'Public Research University',
         logoUrl: 'https://ui-avatars.com/api/?name=HU&background=C1272D&color=fff&bold=true',
         country: 'Germany', city: 'Heidelberg', tuition: 1600, tuitionPeriod: 'avg/year',
-        category: 'Politics & Social Sciences', currentLevel: 'Bac+1', intake: 'October',
-        durationYears: 3, language: 'German', type: 'School', rating: 4.7,
+        category: 'Politics & Social Sciences', currentLevel: 'Bac+1', intake: 'Summer',
+        duration: '3 years', language: 'German', type: 'School', rating: 4.7
     },
     {
         id: 23, programName: 'RWTH Aachen University', schoolName: 'Public Technical University',
         logoUrl: 'https://ui-avatars.com/api/?name=RWTH&background=006AB3&color=fff&bold=true',
         country: 'Germany', city: 'Aachen', tuition: 1700, tuitionPeriod: 'avg/year',
-        category: 'Engineering & Technology', currentLevel: 'Bac+2', intake: 'September',
-        durationYears: 3, language: 'German', type: 'School', rating: 4.5,
+        category: 'Engineering & Technology', currentLevel: 'Bac+2', intake: 'Fall',
+        duration: '3 years', language: 'German', type: 'School', rating: 4.5
     },
     {
         id: 24, programName: 'Frankfurt School of Finance & Management', schoolName: 'Private Business School',
         logoUrl: 'https://ui-avatars.com/api/?name=FS&background=E2001A&color=fff&bold=true',
         country: 'Germany', city: 'Frankfurt', tuition: 22000, tuitionPeriod: 'avg/year',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+3', intake: 'September',
-        durationYears: 3, language: 'English', type: 'School', rating: 4.3,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+3', intake: 'Fall',
+        duration: '3 years', language: 'English', type: 'School', rating: 4.3
     },
     {
         id: 25, programName: 'HEC Paris', schoolName: 'Grande École · Business',
         logoUrl: 'https://ui-avatars.com/api/?name=HEC&background=00205B&color=fff&bold=true',
         country: 'France', city: 'Paris', tuition: 24000, tuitionPeriod: 'avg/year',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'September',
-        durationYears: 2, language: 'English', type: 'School', rating: 4.95,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'Fall',
+        duration: '2 years', language: 'English', type: 'School', rating: 4.95
     },
     {
         id: 26, programName: 'Sciences Po', schoolName: 'Public Research University',
         logoUrl: 'https://ui-avatars.com/api/?name=SP&background=E85D2C&color=fff&bold=true',
         country: 'France', city: 'Paris', tuition: 14000, tuitionPeriod: 'avg/year',
-        category: 'Politics & Social Sciences', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 3, language: 'French', type: 'School', rating: 4.6,
+        category: 'Politics & Social Sciences', currentLevel: 'Bac+1', intake: 'Fall',
+        duration: '3 years', language: 'French', type: 'School', rating: 4.6
     },
     {
         id: 27, programName: 'Universidad Autónoma de Madrid', schoolName: 'Public University',
         logoUrl: 'https://ui-avatars.com/api/?name=UAM&background=004B87&color=fff&bold=true',
         country: 'Spain', city: 'Madrid', tuition: 2200, tuitionPeriod: 'avg/year',
-        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 4, language: 'Spanish', type: 'School', rating: 4.2,
+        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'Winter',
+        duration: '4 years', language: 'Spanish', type: 'School', rating: 4.2
     },
     {
         id: 28, programName: 'ESADE Business School', schoolName: 'Private Business School',
         logoUrl: 'https://ui-avatars.com/api/?name=ESADE&background=C8102E&color=fff&bold=true',
         country: 'Spain', city: 'Barcelona', tuition: 26000, tuitionPeriod: 'avg/year',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+3', intake: 'September',
-        durationYears: 4, language: 'English', type: 'School', rating: 4.75,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+3', intake: 'Fall',
+        duration: '4 years', language: 'English', type: 'School', rating: 4.75
     },
     {
         id: 29, programName: 'Ludwig Maximilian University of Munich', schoolName: 'Public Research University',
         logoUrl: 'https://ui-avatars.com/api/?name=LMU&background=007A53&color=fff&bold=true',
         country: 'Germany', city: 'Munich', tuition: 1500, tuitionPeriod: 'avg/year',
-        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'October',
-        durationYears: 3, language: 'German', type: 'School', rating: 4.65,
+        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'Spring',
+        duration: '3 years', language: 'German', type: 'School', rating: 4.65
     },
     {
         id: 30, programName: 'Humboldt University of Berlin', schoolName: 'Public Research University',
         logoUrl: 'https://ui-avatars.com/api/?name=HUB&background=00396B&color=fff&bold=true',
         country: 'Germany', city: 'Berlin', tuition: 1400, tuitionPeriod: 'avg/year',
-        category: 'Politics & Social Sciences', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 3, language: 'German', type: 'School', rating: 4.35,
+        category: 'Politics & Social Sciences', currentLevel: 'Bac+1', intake: 'Fall',
+        duration: '3 years', language: 'German', type: 'School', rating: 4.35
     },
     {
         id: 31, programName: 'University of Mannheim', schoolName: 'Public University',
         logoUrl: 'https://ui-avatars.com/api/?name=UMA&background=862633&color=fff&bold=true',
         country: 'Germany', city: 'Mannheim', tuition: 1500, tuitionPeriod: 'avg/year',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 3, language: 'German', type: 'School', rating: 4.1,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+1', intake: 'Fall',
+        duration: '3 years', language: 'German', type: 'School', rating: 4.1
     },
     {
         id: 32, programName: 'Pompeu Fabra University', schoolName: 'Public University',
         logoUrl: 'https://ui-avatars.com/api/?name=UPF&background=005F73&color=fff&bold=true',
         country: 'Spain', city: 'Barcelona', tuition: 2600, tuitionPeriod: 'avg/year',
-        category: 'Politics & Social Sciences', currentLevel: 'Bac+1', intake: 'October',
-        durationYears: 4, language: 'Spanish', type: 'School', rating: 3.95,
+        category: 'Politics & Social Sciences', currentLevel: 'Bac+1', intake: 'Summer',
+        duration: '4 years', language: 'Spanish', type: 'School', rating: 3.95
     },
 
-    // ---------- New entries ----------
+    // ---------- More entries ----------
     {
         id: 33, programName: 'MSc Financial Engineering', schoolName: 'EDHEC Business School',
         logoUrl: 'https://ui-avatars.com/api/?name=EDHEC&background=132B57&color=fff&bold=true',
         country: 'France', city: 'Nice', tuition: 22500, tuitionPeriod: '1stYear',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'September',
-        durationYears: 1, language: 'English', type: 'Program', rating: 4.4,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'Fall',
+        duration: '1 year', language: 'English', type: 'Program', rating: 4.4
     },
     {
         id: 34, programName: 'Bachelor in Architecture', schoolName: 'Polytechnic University of Catalonia',
         logoUrl: 'https://ui-avatars.com/api/?name=UPC&background=004B87&color=fff&bold=true',
         country: 'Spain', city: 'Barcelona', tuition: 3600, tuitionPeriod: '1stYear',
-        category: 'Arts & Design', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 5, language: 'Spanish', type: 'Program', rating: 4.3,
+        category: 'Arts & Design', currentLevel: 'Bac+1', intake: 'Fall',
+        duration: '5 years', language: 'Spanish', type: 'Program', rating: 4.3
     },
     {
         id: 35, programName: 'MSc Robotics', schoolName: 'RWTH Aachen University',
         logoUrl: 'https://ui-avatars.com/api/?name=RWTH&background=006AB3&color=fff&bold=true',
         country: 'Germany', city: 'Aachen', tuition: 1700, tuitionPeriod: '1stYear',
-        category: 'Engineering & Technology', currentLevel: 'Bac+5', intake: 'October',
-        durationYears: 2, language: 'English', type: 'Program', rating: 4.6,
+        category: 'Engineering & Technology', currentLevel: 'Bac+5', intake: 'Winter',
+        duration: '2 years', language: 'English', type: 'Program', rating: 4.6
     },
     {
         id: 36, programName: 'Bachelor in Law', schoolName: 'University of Bologna',
         logoUrl: 'https://ui-avatars.com/api/?name=UNIBO&background=8B0000&color=fff&bold=true',
         country: 'Italy', city: 'Bologna', tuition: 2800, tuitionPeriod: '1stYear',
-        category: 'Politics & Social Sciences', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 4, language: 'Italian', type: 'Program', rating: 4.2,
+        category: 'Politics & Social Sciences', currentLevel: 'Bac+1', intake: 'Fall',
+        duration: '4 years', language: 'Italian', type: 'Program', rating: 4.2
     },
     {
         id: 37, programName: 'Bocconi University', schoolName: 'Private University',
         logoUrl: 'https://ui-avatars.com/api/?name=BOC&background=002147&color=fff&bold=true',
         country: 'Italy', city: 'Milan', tuition: 16000, tuitionPeriod: 'avg/year',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+3', intake: 'September',
-        durationYears: 3, language: 'English', type: 'School', rating: 4.7,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+3', intake: 'Spring',
+        duration: '3 years', language: 'English', type: 'School', rating: 4.7
     },
     {
         id: 38, programName: 'MSc Renewable Energy', schoolName: 'Delft University of Technology',
         logoUrl: 'https://ui-avatars.com/api/?name=TUD&background=00A6D6&color=fff&bold=true',
         country: 'Netherlands', city: 'Delft', tuition: 18500, tuitionPeriod: '1stYear',
-        category: 'Engineering & Technology', currentLevel: 'Bac+5', intake: 'September',
-        durationYears: 2, language: 'English', type: 'Program', rating: 4.55,
+        category: 'Engineering & Technology', currentLevel: 'Bac+5', intake: 'Fall',
+        duration: '2 years', language: 'English', type: 'Program', rating: 4.55
     },
     {
         id: 39, programName: 'University of Amsterdam', schoolName: 'Public Research University',
         logoUrl: 'https://ui-avatars.com/api/?name=UvA&background=BC0031&color=fff&bold=true',
         country: 'Netherlands', city: 'Amsterdam', tuition: 12000, tuitionPeriod: 'avg/year',
-        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 3, language: 'English', type: 'School', rating: 4.5,
+        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'Summer',
+        duration: '3 years', language: 'English', type: 'School', rating: 4.5
     },
     {
         id: 40, programName: 'MSc Marketing', schoolName: 'EDHEC Business School',
         logoUrl: 'https://ui-avatars.com/api/?name=EDHEC&background=132B57&color=fff&bold=true',
         country: 'France', city: 'Lille', tuition: 20500, tuitionPeriod: '1stYear',
-        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'January',
-        durationYears: 1, language: 'English', type: 'Program', rating: 4.35,
+        category: 'Business & Management & Finance', currentLevel: 'Bac+5', intake: 'Winter',
+        duration: '1 year', language: 'English', type: 'Program', rating: 4.35
     },
     {
         id: 41, programName: 'Bachelor in Psychology', schoolName: 'University of Granada',
         logoUrl: 'https://ui-avatars.com/api/?name=UGR&background=5A1846&color=fff&bold=true',
         country: 'Spain', city: 'Granada', tuition: 1900, tuitionPeriod: '1stYear',
-        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'September',
-        durationYears: 4, language: 'Spanish', type: 'Program', rating: 4.0,
+        category: 'Science & Health', currentLevel: 'Bac+1', intake: 'Fall',
+        duration: '4 years', language: 'Spanish', type: 'Program', rating: 4.0
     },
     {
         id: 42, programName: 'KIT Karlsruhe', schoolName: 'Public Technical University',
         logoUrl: 'https://ui-avatars.com/api/?name=KIT&background=009682&color=fff&bold=true',
         country: 'Germany', city: 'Karlsruhe', tuition: 1500, tuitionPeriod: 'avg/year',
-        category: 'Engineering & Technology', currentLevel: 'Bac+1', intake: 'October',
-        durationYears: 3, language: 'German', type: 'School', rating: 4.4,
+        category: 'Engineering & Technology', currentLevel: 'Bac+1', intake: 'Spring',
+        duration: '3 years', language: 'German', type: 'School', rating: 4.4
     },
 ];

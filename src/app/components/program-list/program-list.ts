@@ -50,7 +50,7 @@ export class ProgramList {
     { key: 'city' as keyof Program, label: 'City' },
     { key: 'currentLevel' as keyof Program, label: 'Current Level' },
     { key: 'intake' as keyof Program, label: 'Intake' },
-    { key: 'durationYears' as keyof Program, label: 'Duration' },
+    { key: 'duration' as keyof Program, label: 'Duration' },
     { key: 'language' as keyof Program, label: 'Program Language' },
   ];
 

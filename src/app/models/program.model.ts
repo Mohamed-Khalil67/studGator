@@ -10,7 +10,7 @@ export interface Program {
     category: string;
     currentLevel: string;
     intake: string;
-    durationYears: number;
+    duration: string;
     language: string;
     type: 'School' | 'Program';
     rating: number;
