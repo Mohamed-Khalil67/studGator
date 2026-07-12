@@ -24,7 +24,9 @@
         </div>
 
         <div class="actions">
-            <button class="btn-view">View Program</button>
+            <button class="btn-view">
+                {{ program().type === 'School' ? 'View School' : 'View Program' }}
+            </button>
             <button class="btn-fav">
                 <i class="fa-regular fa-heart"></i>
             </button>

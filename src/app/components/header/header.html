@@ -12,9 +12,9 @@
             <i class="fa-solid fa-bars" style="color: purple;"></i>
         </button>
         <ul class="nav-links">
+            <li><a href="#">About us</a></li>
             <li><a href="#">Schools</a></li>
             <li><a href="#">Programs</a></li>
-            <li><a href="#">About us</a></li>
             <li><a href="#">FAQs</a></li>
         </ul>
         <div class="nav-actions">
@@ -27,17 +27,15 @@
 
         <aside class="nav-menu-burger" [class.open]="isMenuOpen()">
             <ul class="nav-links-burger">
-                <li><a href="#">Schools</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">FAQs</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-info"></i> About us</a></li>
+                <li><a href="#"><i class="fa-solid fa-graduation-cap"></i> Programs</a></li>
+                <li><a href="#"><i class="fa-solid fa-building-columns"></i> Schools</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-question"></i> FAQs</a></li>
             </ul>
+
             <div class="nav-actions-burger">
-                <button class="search-toggle">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <a class="btn-login" href="#">Login</a>
-                <a class="btn-signup" href="#">Sign up</a>
+                <a class="btn-login" href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                <a class="btn-signup" href="#"><i class="fa-solid fa-user-plus"></i> Sign up</a>
             </div>
         </aside>
     </nav>

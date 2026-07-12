@@ -1,11 +1,17 @@
 <div class="list-wrapper">
-    <app-search-bar (searchChange)="onSearch($event)"></app-search-bar>
+    <div class="filters-wrapper">
+        <app-filter-button [label]="'All'" [active]="selectedfilterButton === 'All'"
+            (clicked)="onFilterButtonClick('All')"></app-filter-button>
+        <app-filter-button [label]="'Schools'" [active]="selectedfilterButton === 'School'"
+            (clicked)="onFilterButtonClick('School')"></app-filter-button>
+        <app-filter-button [label]="'Programs'" [active]="selectedfilterButton === 'Program'"
+            (clicked)="onFilterButtonClick('Program')"></app-filter-button>
 
+        <app-search-bar (searchChange)="onSearch($event)"></app-search-bar>
+    </div>
     @if (filteredPrograms$ | async; as programs) {
     <span class="count-pill">{{ programs.length }} results</span>
-    }
 
-    @if (filteredPrograms$ | async; as programs) {
     <div class="list">
         @for (program of programs; track program.id) {
         <app-program-card [program]="program" />

@@ -4,32 +4,55 @@ import { Program } from '../../models/program.model';
 import { ProgramCard } from "../program-card/program-card";
 import { SearchBar } from "../search-bar/search-bar";
 import { AsyncPipe } from '@angular/common';
-import { BehaviorSubject, debounceTime, distinctUntilChanged, map, Observable } from 'rxjs';
+import { BehaviorSubject, combineLatest, debounceTime, distinctUntilChanged, map, Observable } from 'rxjs';
+import { FilterButton } from "../filter-button/filter-button";
 @Component({
   selector: 'app-program-list',
-  imports: [ProgramCard, SearchBar, AsyncPipe],
+  imports: [ProgramCard, SearchBar, AsyncPipe, FilterButton],
   templateUrl: './program-list.html',
   styleUrl: './program-list.scss',
 })
 export class ProgramList {
   private readonly programs: Program[] = MOCK_PROGRAMS;
 
-  private search$ = new BehaviorSubject<string>('');
+  selectedfilterButton: string = 'All';
 
-  filteredPrograms$: Observable<Program[]> = this.search$.pipe(
+  private search$ = new BehaviorSubject<string>('');
+  private filterButton$ = new BehaviorSubject<string>('All');
+
+  private debouncedSearch$ = this.search$.pipe(
     debounceTime(300),
-    distinctUntilChanged(),
-    map((searchTerm) => {
-      const q = searchTerm.trim().toLowerCase();
-      if (!q) return this.programs; // default return all programs if search term is empty
-      return this.programs.filter(program =>
-        program.programName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        program.schoolName.toLowerCase().includes(searchTerm.toLowerCase())
-      );
+    distinctUntilChanged()
+  );
+
+  filteredPrograms$: Observable<Program[]> = combineLatest([
+    this.debouncedSearch$,
+    this.filterButton$,
+  ]).pipe(
+    // multiple filters can be applied here
+    map(([search, filterButton]) => {
+      const searchTerm = search.trim().toLowerCase();
+
+      return this.programs.filter(program => {
+        const matchesSearch =
+          !searchTerm ||
+          program.programName.toLowerCase().includes(searchTerm) ||
+          program.schoolName.toLowerCase().includes(searchTerm);
+
+        const matchesType =
+          filterButton === 'All' || program.type === filterButton;
+
+        return matchesSearch && matchesType;
+      });
     })
   );
 
   onSearch(value: string) {
     this.search$.next(value);
+  }
+
+  onFilterButtonClick(value: string) {
+    this.selectedfilterButton = value;
+    this.filterButton$.next(value);
   }
 }

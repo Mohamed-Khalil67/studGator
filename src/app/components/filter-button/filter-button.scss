@@ -1,0 +1,24 @@
+@use '../../styles/variables' as vars;
+
+.pill {
+  display: block;
+  font-family: vars.$font-poppins;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background: vars.$color-primary;
+  border-radius: 30px;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: vars.$color-primary-light;
+    color: #fff;
+  }
+
+  &.active {
+    background: vars.$color-primary-medium;
+    color: #fff;
+  }
+}

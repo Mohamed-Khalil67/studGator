@@ -2,7 +2,7 @@
 
 .header {
   padding: 14px 0;
-  background-color: #fff;
+  background: #fff;
   box-shadow: 0 2px 10px rgba(180, 30, 180, 0.1);
   position: fixed;
   top: 0;
@@ -109,6 +109,18 @@
     border: 1.5px solid vars.$color-primary;
     border-radius: 30px;
     padding: 8px 22px;
+    i {
+      color: vars.$color-primary;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      background: vars.$color-primary;
+      color: #fff;
+      i {
+        color: #fff;
+      }
+    }
   }
 
   .btn-signup {
@@ -120,6 +132,18 @@
     border: 1.5px solid vars.$color-primary;
     border-radius: 30px;
     padding: 8px 22px;
+    i {
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      background: #fff;
+      color: vars.$color-primary;
+      i {
+        color: vars.$color-primary;
+      }
+    }
   }
 
   // Mobile breakpoint
@@ -140,27 +164,47 @@
       position: absolute;
       top: 100%;
       right: 0;
-      background: #fff;
+      background: white;
       flex-direction: column;
       align-items: flex-start;
       padding: 16px 24px;
       box-shadow: 0 2px 10px rgba(180, 30, 180, 0.1);
+      border-bottom-left-radius: 20px;
+
       &.open {
         display: flex;
       }
 
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        i {
+          width: 20px;
+          text-align: center;
+        }
+      }
+
       .nav-links-burger {
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        gap: 10px;
+        width: 100%;
+        padding: 20px 0;
+        margin-bottom: 20px;
+        border-bottom: 2px solid black;
+
         a {
           font-family: vars.$font-poppins;
           font-size: 16px;
           font-weight: 500;
-          padding: 8px 20px;
           transition: color 0.2s ease;
-          flex-shrink: 0;
+
+          i {
+            color: vars.$color-primary;
+          }
 
           &:hover,
           &.active {
@@ -172,13 +216,8 @@
       .nav-actions-burger {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
+        align-items: flex-start;
         gap: 8px;
-        .btn-login,
-        .btn-signup {
-          text-align: center;
-        }
       }
     }
   }
