@@ -10,7 +10,6 @@
   right: 0;
 
   .header-container {
-    max-width: 100%;
     margin: auto;
     padding: 0 24px;
     display: flex;
@@ -140,9 +139,7 @@
       display: none;
       position: absolute;
       top: 100%;
-      left: auto;
       right: 0;
-      max-width: 80vw;
       background: #fff;
       flex-direction: column;
       align-items: flex-start;
@@ -157,7 +154,6 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        width: 100%;
         a {
           font-family: vars.$font-poppins;
           font-size: 16px;

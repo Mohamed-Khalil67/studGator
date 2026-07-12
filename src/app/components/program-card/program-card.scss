@@ -1,18 +1,20 @@
 @use '../../styles/variables' as vars;
 
+:host {
+  display: block;
+  width: 100%;
+}
+
 .card {
+  min-height: 200px;
   display: flex;
-  gap: 20px;
-  align-items: stretch;
   justify-content: space-between;
-  background: linear-gradient(rgba(254, 254, 255, 0.9));
+  background: rgba(254, 254, 255, 0.9);
   box-shadow: rgba(194, 194, 194, 0.25) 0px 5px 5px 0px;
   border-radius: 30px;
   padding: 16px 40px;
-  flex-shrink: 0;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
   .logo {
-    width: 200px;
     height: 200px;
     align-self: center;
     object-fit: contain;
@@ -22,8 +24,8 @@
     margin-right: 60px;
   }
   .info {
-    flex: 1; // for growing content
-    min-width: 0; // define width
+    flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,8 +38,6 @@
     }
 
     .badge-school {
-      display: inline-block;
-      gap: 6px;
       align-self: flex-start;
       background: #fff;
       border: 1px solid rgb(254, 254, 255);
@@ -92,7 +92,8 @@
 
     .btn-view {
       flex: 1;
-      background: #fff;
+      min-width: 0;
+      background: white;
       color: vars.$color-primary;
       font-family: vars.$font-poppins;
       font-weight: 600;
@@ -101,20 +102,32 @@
       border-radius: 30px;
       padding: 10px;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    .btn-view:hover {
+      background: vars.$color-primary;
+      color: white;
     }
 
     .btn-fav {
-      background: #fff;
-      border-radius: 30px;
-      padding: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-shrink: 0;
+      background: white;
+      border-radius: 40px;
+      padding: 8px;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
       i {
         color: vars.$color-primary;
         font-size: 30px;
+      }
+    }
+
+    .btn-fav:hover {
+      background: vars.$color-primary;
+      i {
+        color: white;
       }
     }
   }
@@ -124,22 +137,22 @@
   box-shadow:
     0 0 0 2px vars.$color-primary,
     rgba(194, 194, 194, 0.25) 0px 4px 4px 0px;
-  background-color: vars.$color-primary-medium;
+  background: vars.$color-primary-lighter;
 }
 
 @media (max-width: 1100px) {
   .card {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 20px;
     padding: 16px;
     .logo {
-      width: 100px;
-      height: 100px;
-      align-items: center;
-      justify-content: center;
+      width: 150px;
+      height: 150px;
       margin: 0;
+    }
+    .info {
+      width: 100%;
     }
   }
 }

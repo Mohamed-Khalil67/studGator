@@ -2,6 +2,7 @@
 
 .list-wrapper {
   width: 90%;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 80px 24px 24px;
   @media (max-width: 900px) {
@@ -14,12 +15,14 @@
 .list {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   gap: 16px;
 }
 
 .count-pill {
-  display: inline-block;
-  align-self: flex-end;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
   font-family: vars.$font-poppins;
   font-size: 14px;
   font-weight: 600;
