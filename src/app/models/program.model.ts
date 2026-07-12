@@ -8,20 +8,6 @@ export interface Program {
     tuition: number;
     tuitionPeriod: string;
     category: string;
+    type: 'School' | 'Program';
+    rating: number;
 }
-/*
-export interface ProgramDetail extends Program {
-    heroImageUrl: string;
-    topSchool: boolean;
-    language: string;
-    durationYears: string;
-    aboutText: string;
-    requirements: string[];
-    campuses: string[];
-    mapsLink: string;
-    intakeSeasons: string[];
-    intakeNote: string;
-    accreditations: string[];
-    entryLevels: string[];
-    degreeLevel: string;
-} */
