@@ -1,3 +1,5 @@
+@if (filteredPrograms$ | async; as programs) {
+
 <div class="list-wrapper">
     <div class="filters-wrapper">
         <app-filter-button [label]="'All'" [active]="selectedfilterButton === 'All'"
@@ -9,16 +11,15 @@
         <app-search-bar (searchChange)="onSearch($event)"></app-search-bar>
     </div>
     <div class="filters-dropdown">
-        <div class="filters-dd-wrapper">
-            @for (dd of dropdowns; track dd.key) {
-            <app-filter-dropdown [label]="dd.label" [options]="dd.options"
-                (selected)="onDropdownSelect(dd.key, $event)"></app-filter-dropdown>
-            }
-        </div>
+        @for (dd of dropdowns; track dd.key) {
+        <app-filter-dropdown [label]="dd.label" [options]="dd.options"
+            (selected)="onDropdownSelect(dd.key, $event)"></app-filter-dropdown>
+        }
         <button class="clear-btn" (click)="clearFilters()">Reset All</button>
     </div>
-    @if (filteredPrograms$ | async; as programs) {
-    <span class="count-pill">{{ programs.length }} results</span>
+    <div class="results-bar">
+        <span class="count-pill">{{ programs.length }} results</span>
+    </div>
 
     <div class="list">
         @for (program of programs; track program.id) {
@@ -28,5 +29,5 @@
         <p class="no-results">No programs match your search.</p>
         }
     </div>
-    }
 </div>
+}

@@ -5,15 +5,11 @@
   max-width: 1300px;
   margin: 0 auto;
   padding: 80px 24px 24px;
-  @media (max-width: 900px) {
-    width: 100%;
-    max-width: 100%;
-    padding: 80px 0 0;
-  }
 }
 .filters-wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -21,33 +17,31 @@
 .filters-dropdown {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 10px;
-}
-.filters-dd-wrapper {
-  border-right: 2px solid gray;
-  padding-right: 10px;
-  margin-right: 10px;
-}
-.clear-btn {
-  font-family: vars.$font-poppins;
-  font-size: 14px;
-  font-weight: 600;
-  color: white;
-  background: vars.$color-primary-medium;
-  border-radius: 30px;
-  padding: 10px 10px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
 
-  &:hover {
-    background: vars.$color-primary-light;
-    color: #fff;
-  }
-
-  &.active {
+  .clear-btn {
+    font-family: vars.$font-poppins;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
     background: vars.$color-primary-medium;
-    color: #fff;
+    border-radius: 30px;
+    padding: 10px 10px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background: vars.$color-primary-light;
+      color: #fff;
+    }
+
+    &.active {
+      background: vars.$color-primary-medium;
+      color: #fff;
+    }
   }
 }
 
@@ -58,10 +52,13 @@
   gap: 16px;
 }
 
+.results-bar {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 12px;
+}
+
 .count-pill {
-  display: block;
-  width: fit-content;
-  margin-left: auto;
   font-family: vars.$font-poppins;
   font-size: 14px;
   font-weight: 600;
@@ -69,5 +66,20 @@
   background: white;
   border-radius: 30px;
   padding: 6px 16px;
-  margin-bottom: 16px;
+}
+
+@media (max-width: 900px) {
+  .list-wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 80px 0 0;
+  }
+  .filters-wrapper {
+    justify-content: flex-start;
+  }
+  .filters-dropdown {
+    .clear-btn {
+      margin: 0;
+    }
+  }
 }

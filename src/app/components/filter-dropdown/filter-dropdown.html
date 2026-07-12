@@ -1,22 +1,21 @@
 <div class="dropdown">
     <button class="pill" [class.active]="selectedOptions().size" (click)="toggle()">
         {{ label() }}
-        @if (selectedOptions().size) {
-        <span class="badge-count">{{ selectedOptions().size }}</span>
-        }
         <i class="fa-solid fa-chevron-down"></i>
     </button>
 
     @if (isOpen()) {
     <ul class="dropdown-menu">
-        @for (option of options(); track option) {
-        <li>
-            <label class="option">
-                <span>{{ option }}</span>
-                <input type="checkbox" [checked]="isSelected(option)" (change)="toggleOption(option)" />
-            </label>
-        </li>
-        }
+        <div class="option-wrapper">
+            @for (option of options(); track option) {
+            <li>
+                <label class="option">
+                    <span>{{ option }}</span>
+                    <input type="checkbox" [checked]="isSelected(option)" (change)="toggleOption(option)" />
+                </label>
+            </li>
+            }
+        </div>
         @if (selectedOptions().size) {
         <li class="menu-footer">
             <button class="menu-clear" (click)="clear()">Clear</button>

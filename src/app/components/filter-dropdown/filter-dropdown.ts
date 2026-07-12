@@ -28,10 +28,10 @@ export class FilterDropdown {
   }
 
   toggleOption(option: string) {
-    const set = new Set(this.selectedOptions());
-    set.has(option) ? set.delete(option) : set.add(option);
-    this.selectedOptions.set(set);
-    this.selected.emit([...set]);
+    const setData = new Set(this.selectedOptions());
+    setData.has(option) ? setData.delete(option) : setData.add(option);
+    this.selectedOptions.set(setData);
+    this.selected.emit([...setData]);
   }
 
   isSelected(option: string): boolean {

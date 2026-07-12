@@ -39,14 +39,22 @@ export class ProgramList {
     return map;
   }
 
-  readonly dropdowns = [
-    { key: 'country' as keyof Program, label: 'Country', options: this.optionsFor('country') },
-    { key: 'category' as keyof Program, label: 'Field of Study', options: this.optionsFor('category') },
-  ];
-
   private optionsFor(key: keyof Program): string[] {
     return [...new Set(this.programs.map(p => String(p[key])))];   // no 'All'
   }
+
+  private readonly filterKeys = [
+    { key: 'country' as keyof Program, label: 'Country' },
+    { key: 'schoolName' as keyof Program, label: 'School' },
+    { key: 'category' as keyof Program, label: 'Field of Study' },
+    { key: 'city' as keyof Program, label: 'City' },
+    { key: 'currentLevel' as keyof Program, label: 'Current Level' },
+    { key: 'intake' as keyof Program, label: 'Intake' },
+    { key: 'durationYears' as keyof Program, label: 'Duration' },
+    { key: 'language' as keyof Program, label: 'Program Language' },
+  ];
+
+  readonly dropdowns = this.filterKeys.map(d => ({ ...d, options: this.optionsFor(d.key) }));
 
   private dropdownFilters$ = new BehaviorSubject<Record<string, string[]>>({});
 
