@@ -18,6 +18,39 @@
   gap: 10px;
 }
 
+.filters-dropdown {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.filters-dd-wrapper {
+  border-right: 2px solid gray;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+.clear-btn {
+  font-family: vars.$font-poppins;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background: vars.$color-primary-medium;
+  border-radius: 30px;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: vars.$color-primary-light;
+    color: #fff;
+  }
+
+  &.active {
+    background: vars.$color-primary-medium;
+    color: #fff;
+  }
+}
+
 .list {
   display: flex;
   flex-direction: column;

@@ -2,7 +2,12 @@
     <img class="logo" [src]="program().logoUrl" [alt]="program().schoolName" />
 
     <div class="info">
-        <h2 class="title">{{ program().programName }}</h2>
+        <div class="title-row">
+            <h2 class="title">{{ program().programName }}</h2>
+            @if (topLabel()) {
+            <span class="top-pill">{{ topLabel() }}</span>
+            }
+        </div>
         <div class="badge-school">
             <p>{{ program().schoolName }}</p>
         </div>

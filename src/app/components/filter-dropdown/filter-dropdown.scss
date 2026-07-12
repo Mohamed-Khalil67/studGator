@@ -1,0 +1,104 @@
+@use '../../styles/variables' as vars;
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  font-family: vars.$font-poppins;
+  font-size: 14px;
+  font-weight: 500;
+  color: vars.$color-primary;
+  background: rgba(233, 226, 255, 0.5);
+  border-radius: 30px;
+  padding: 15px 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: white;
+  }
+  &.active {
+    background: vars.$color-primary;
+    color: #fff;
+  }
+
+  i {
+    font-size: 11px;
+  }
+
+  .badge-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin: 0 5px 0 5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: vars.$color-primary;
+    background: #fff;
+    border-radius: 9px;
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100%);
+  left: 0;
+  min-width: 200px;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: rgba(90, 22, 153, 0.15) 0px 5px 20px 0px;
+  padding: 8px;
+  z-index: 50;
+
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-family: vars.$font-poppins;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: vars.$color-primary-lighter;
+    }
+
+    input[type='checkbox'] {
+      width: 16px;
+      height: 16px;
+      accent-color: vars.$color-primary;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+  }
+  .menu-footer {
+    border-top: 1px solid black;
+    margin-top: 6px;
+    padding-top: 6px;
+  }
+
+  .menu-clear {
+    width: 100%;
+    text-align: center;
+    font-family: vars.$font-poppins;
+    font-size: 13px;
+    font-weight: 600;
+    color: vars.$color-primary-medium;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover {
+      background: white;
+    }
+  }
+}

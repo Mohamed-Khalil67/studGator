@@ -1,10 +1,5 @@
 @use '../../styles/variables' as vars;
 
-:host {
-  display: block;
-  width: 100%;
-}
-
 .card {
   min-height: 200px;
   display: flex;
@@ -30,11 +25,26 @@
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    .title {
-      font-family: vars.$font-poppins;
-      font-weight: 600;
-      font-size: 24px;
-      color: rgb(22, 22, 22);
+    .title-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      .title {
+        font-family: vars.$font-poppins;
+        font-weight: 600;
+        font-size: 24px;
+        color: rgb(22, 22, 22);
+      }
+      .top-pill {
+        font-family: vars.$font-poppins;
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+        background: vars.$color-primary;
+        border-radius: 30px;
+        padding: 4px 12px;
+      }
     }
 
     .badge-school {

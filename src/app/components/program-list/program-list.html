@@ -6,15 +6,23 @@
             (clicked)="onFilterButtonClick('School')"></app-filter-button>
         <app-filter-button [label]="'Programs'" [active]="selectedfilterButton === 'Program'"
             (clicked)="onFilterButtonClick('Program')"></app-filter-button>
-
         <app-search-bar (searchChange)="onSearch($event)"></app-search-bar>
+    </div>
+    <div class="filters-dropdown">
+        <div class="filters-dd-wrapper">
+            @for (dd of dropdowns; track dd.key) {
+            <app-filter-dropdown [label]="dd.label" [options]="dd.options"
+                (selected)="onDropdownSelect(dd.key, $event)"></app-filter-dropdown>
+            }
+        </div>
+        <button class="clear-btn" (click)="clearFilters()">Reset All</button>
     </div>
     @if (filteredPrograms$ | async; as programs) {
     <span class="count-pill">{{ programs.length }} results</span>
 
     <div class="list">
         @for (program of programs; track program.id) {
-        <app-program-card [program]="program" />
+        <app-program-card [program]="program" [rank]="rankOf(program)" />
         }
         @if (programs.length === 0) {
         <p class="no-results">No programs match your search.</p>
