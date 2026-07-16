@@ -16,6 +16,8 @@ export class FilterDropdown {
   isOpen = signal(false);
   selectedOptions = signal<Set<string>>(new Set());
 
+  // Need to build a directive that listens for clicks outside the component and closes the dropdown when that happens. This is a common pattern for dropdowns and modals.
+  // The @HostListener decorator is used to listen for click events on the document, and if the click is outside the component, it sets isOpen to false.
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
     if (this.isOpen() && !this.el.nativeElement.contains(event.target)) {

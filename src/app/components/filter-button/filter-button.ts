@@ -9,5 +9,5 @@ import { Component, input, output } from '@angular/core';
 export class FilterButton {
   label = input<string>();
   active = input<boolean>();
-  clicked = output<void>();
+  clickedFilterButton = output<void>();
 }

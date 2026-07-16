@@ -3,14 +3,15 @@
 <div class="list-wrapper">
     <div class="filters-wrapper">
         <app-filter-button [label]="'All'" [active]="selectedfilterButton === 'All'"
-            (clicked)="onFilterButtonClick('All')"></app-filter-button>
+            (clickedFilterButton)="onFilterButtonClick('All')"></app-filter-button>
         <app-filter-button [label]="'Schools'" [active]="selectedfilterButton === 'School'"
-            (clicked)="onFilterButtonClick('School')"></app-filter-button>
+            (clickedFilterButton)="onFilterButtonClick('School')"></app-filter-button>
         <app-filter-button [label]="'Programs'" [active]="selectedfilterButton === 'Program'"
-            (clicked)="onFilterButtonClick('Program')"></app-filter-button>
+            (clickedFilterButton)="onFilterButtonClick('Program')"></app-filter-button>
         <app-search-bar (searchChange)="onSearch($event)"></app-search-bar>
     </div>
     <div class="filters-dropdown">
+        <!-- @for (dd of dropdowns$ | async; track dd.key) { ... } -->
         @for (dd of dropdowns; track dd.key) {
         <app-filter-dropdown [label]="dd.label" [options]="dd.options"
             (selected)="onDropdownSelect(dd.key, $event)"></app-filter-dropdown>
@@ -25,7 +26,8 @@
         @for (program of programs; track program.id) {
         <app-program-card [program]="program" [rank]="rankOf(program)" />
         }
-        @if (programs.length === 0) {
+        @empty {
+        <!-- Mistake here , instead oof if length == 0 , just use empty -->
         <p class="no-results">No programs match your search.</p>
         }
     </div>

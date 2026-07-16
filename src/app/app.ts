@@ -9,5 +9,5 @@ import { ProgramList } from "./components/program-list/program-list";
   styleUrl: './app.scss'
 })
 export class App {
-  programs = MOCK_PROGRAMS;
+  // programs = MOCK_PROGRAMS;
 }
